@@ -1,0 +1,26 @@
+{
+  // TODO: I don't know how we can control the target container or image name
+  //       (and.. Would it be useful to reuse pre-built images ? Maybe this
+  //       makes no sense after all...)
+  "build": {
+    "dockerfile": "docker/Dockerfile",
+    "context": "docker",
+    "args": {
+      "MAVEN_VERSION": "3.9.6"
+    }
+  },
+  // The username to use for spawning processes in the container including
+  // lifecycle scripts and any remote editor/IDE server process. The default
+  // is the same user as the container.
+  "remoteUser": "vscode",
+  // The user the container will be started with. The default is the user on
+  // the Docker image.
+  "containerUser": "vscode",
+  // "forwardPorts": [3000],
+  "customizations": {
+    // Configure properties specific to VS Code.
+    "vscode": {
+      "extensions": ["ms-azuretools.vscode-docker"]
+    }
+  }
+}
