@@ -20,7 +20,10 @@
   "customizations": {
     // Configure properties specific to VS Code.
     "vscode": {
-      "extensions": ["ms-azuretools.vscode-docker"]
+      "extensions": [
+        "ms-azuretools.vscode-docker",
+        "vscjava.vscode-java-pack"
+      ]
     }
   }
 }
