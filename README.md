@@ -40,3 +40,12 @@ I tried to build the devcontainer.json and the container
 The following sites helped me get this devContainer setup straight.
 - https://snyk.io/fr/blog/best-practices-to-build-java-containers-with-docker/
 - https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
+
+# Spring project
+Use [Spring initializr](https://start.spring.io/#!type=maven-project&language=java&jvmVersion=21)
+to scaffold the Spring Boot project _(Use `java 21` with `maven`)_.
+
+You can then build the Spring Boot application with:
+```bash
+./mvnw spring-boot:run
+```
