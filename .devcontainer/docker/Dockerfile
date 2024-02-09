@@ -53,7 +53,7 @@ RUN curl -fsSL -o /tmp/apache-maven.tar.gz ${MAVEN_DOWNLOAD_URL} \
  && rm -f /tmp/apache-maven.tar.gz
 
 ENV PATH /opt/apache-maven-${MAVEN_VERSION}/bin:${PATH}
-ENV MAVEN_HOME /usr/share/maven
+ENV MAVEN_HOME /opt/apache-maven-${MAVEN_VERSION}
 # FIXME: findout what would be the best place for a home dir in a containerized rootless environement but without a user folder (because user folder may vary: UID, name etc...)
 # ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 

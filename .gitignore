@@ -1,0 +1,98 @@
+##############################
+## Java
+##############################
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
+replay_pid*
+
+##############################
+## Maven
+##############################
+!maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+buildNumber.properties
+dependency-reduced-pom.xml
+.mvn/timing.properties
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+pom.xml.bak
+release.properties
+target/
+
+##############################
+## Gradle
+##############################
+bin/
+build/
+.gradle
+.gradletasknamecache
+gradle-app.setting
+!gradle-wrapper.jar
+
+##############################
+## IntelliJ
+##############################
+*.iml
+*.ipr
+*.iws
+.idea/
+.idea_modules/
+out/
+
+##############################
+## Eclipse
+##############################
+*.bak
+*.tmp
+*.swp
+*~.nib
+.apt_generated
+bin/
+.classpath
+.factorypath
+.loadpath
+local.properties
+.metadata
+.project
+.settings/
+tmp/
+
+##############################
+## NetBeans
+##############################
+nbproject/private/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+nbbuild/
+!**/src/main/**/nbbuild/
+!**/src/test/**/nbbuild/
+.nb-gradle/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+
+##############################
+## Visual Studio Code
+##############################
+.vscode/
+.code-workspace
+
+##############################
+## OS X
+##############################
+.DS_Store
+
+##############################
+## Miscellaneous
+##############################
+*.log
