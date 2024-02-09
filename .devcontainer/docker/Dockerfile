@@ -57,4 +57,8 @@ ENV MAVEN_HOME /opt/apache-maven-${MAVEN_VERSION}
 # FIXME: findout what would be the best place for a home dir in a containerized rootless environement but without a user folder (because user folder may vary: UID, name etc...)
 # ENV MAVEN_CONFIG "$USER_HOME_DIR/.m2"
 
+RUN curl -fsSL https://deb.nodesource.com/setup_21.x | bash - \
+ && apt-get install -y nodejs
+RUN npm install -g diff-so-fancy
+
 USER ${USER_NAME}
