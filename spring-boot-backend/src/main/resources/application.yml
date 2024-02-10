@@ -1,0 +1,7 @@
+api:
+  welcome:
+    default_username: default username from the application.properties
+# vuejs_springboot_demo.staticDir=/webapp/
+
+# webapp:
+#   publicdir: /webapp/

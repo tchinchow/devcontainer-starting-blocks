@@ -59,6 +59,20 @@ ENV MAVEN_HOME /opt/apache-maven-${MAVEN_VERSION}
 
 RUN curl -fsSL https://deb.nodesource.com/setup_21.x | bash - \
  && apt-get install -y nodejs
-RUN npm install -g diff-so-fancy
+
+# FIXME Install dependencies required by Cypress...
+# (this does not work well yet inside a container because Cypress still searches for an X server)
+RUN apt install -y \
+    libasound2:amd64=1.2.6.1-1ubuntu1 \
+    libgbm-dev:amd64=23.0.4-0ubuntu1~22.04.1 \
+    libgtk-3-0:amd64=3.24.33-1ubuntu2 \
+    libgtk2.0-0:amd64=2.24.33-2ubuntu2 \
+    libnotify-dev:amd64=0.7.9-3ubuntu5.22.04.1 \
+    libnss3:amd64=2:3.68.2-0ubuntu1.2 \
+    libxss1:amd64=1:1.2.3-1build2 \
+    libxtst6:amd64=2:1.2.3-1build4 \
+    xauth=1:1.1-1build2 \
+    xvfb=2:21.1.4-2ubuntu1.7~22.04.8 \
+ && npm install -g diff-so-fancy
 
 USER ${USER_NAME}

@@ -24,8 +24,16 @@
         "ms-azuretools.vscode-docker",
         "vscjava.vscode-java-pack",
         "vscjava.vscode-spring-boot-dashboard",
-        "vmware.vscode-spring-boot"
-      ]
+        "vmware.vscode-spring-boot",
+        "Vue.volar",
+        "Vue.vscode-typescript-vue-plugin",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
+      "settings" :{
+        "java.compile.nullAnalysis.mode": "automatic",
+        "java.configuration.updateBuildConfiguration": "interactive"
+      }
     }
   }
 }

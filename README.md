@@ -49,3 +49,5 @@ You can then build the Spring Boot application with:
 ```bash
 ./mvnw spring-boot:run
 ```
+
+# Node.js project
